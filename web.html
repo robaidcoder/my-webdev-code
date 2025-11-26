@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rubushiki Bar</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+            background: #f7f3ef;
+            color: #333;
+        }
+
+        header {
+            background: #342e37;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            font-size: 40px;
+            letter-spacing: 3px;
+            font-weight: 700;
+        }
+
+        .container {
+            width: 85%;
+            margin: auto;
+            padding: 30px;
+        }
+
+        h2 {
+            border-left: 5px solid #a67256;
+            padding-left: 10px;
+            color: #4b3f3f;
+        }
+
+        ul {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            list-style: none;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        ul li {
+            padding: 8px 0;
+            font-size: 18px;
+            border-bottom: 1px solid #eee;
+        }
+
+        ul li:last-child {
+            border-bottom: none;
+        }
+
+        .food-img {
+            width: 300px;
+            display: block;
+            margin: 20px auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            margin-top: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        table th, table td {
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+            text-align: center;
+        }
+
+        table th {
+            background: #a67256;
+            color: white;
+        }
+
+        form {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 30px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        form input, form select, form textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        form button {
+            background: #a67256;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        form button:hover {
+            background: #8a5e46;
+        }
+    </style>
+</head>
+<body>
+
+<header>Rubushiki Bar</header>
+
+<div class="container">
+
+    <h2>Food Menu</h2>
+    <ul>
+        <li>🍣 Sushi Roll</li>
+        <li>🍜 Ramen Bowl</li>
+        <li>🥢 Teriyaki Chicken</li>
+        <li>🥗 Seaweed Salad</li>
+        <li>🍱 Bento Box</li>
+    </ul>
+
+    <img src="https://i.imgur.com/2Jg7QK0.jpeg" alt="Food Image" class="food-img">
+
+    <h2>Employee Salary Table</h2>
+    <table>
+        <tr>
+            <th>Position</th>
+            <th>Monthly Salary</th>
+        </tr>
+        <tr>
+            <td>Chef</td>
+            <td>$3000</td>
+        </tr>
+        <tr>
+            <td>Waiter</td>
+            <td>$1800</td>
+        </tr>
+        <tr>
+            <td>Cleaner</td>
+            <td>$1200</td>
+        </tr>
+        <tr>
+            <td>Manager</td>
+            <td>$4000</td>
+        </tr>
+    </table>
+
+    <h2>Employee Application Form</h2>
+    <form>
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email" required>
+
+        <label>Phone Number</label>
+        <input type="text" placeholder="Enter phone number" required>
+
+        <label>Position Applying For</label>
+        <select required>
+            <option value="">Select a position</option>
+            <option>Chef</option>
+            <option>Waiter</option>
+            <option>Cleaner</option>
+            <option>Manager</option>
+        </select>
+
+        <label>Why should we hire you?</label>
+        <textarea rows="4" placeholder="Explain briefly..."></textarea>
+
+        <button type="submit">Submit Application</button>
+    </form>
+
+</div>
+
+</body>
+</html>
